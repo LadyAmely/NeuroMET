@@ -1,0 +1,54 @@
+.program-container {
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.program-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.program-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.program-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.program-time {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #555;
+    flex: 0 0 120px;
+    text-align: right;
+}
+
+.program-event {
+    font-weight: normal;
+    font-size: 1rem;
+    color: #777;
+    flex: 1;
+    margin-left: 20px;
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    color: #1f2937;
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

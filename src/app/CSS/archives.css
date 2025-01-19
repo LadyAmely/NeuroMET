@@ -1,0 +1,73 @@
+h2 {
+    text-align: center;
+    color: #2d3748;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #00ffcc;
+}
+
+.archives {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.archives label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.archives select {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 12px 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+}
+
+.archives select:hover {
+    border-color: #00ffcc;
+}
+
+.archives select:focus {
+    outline: none;
+    border-color: #00ffcc;
+    box-shadow: 0 0 5px rgba(0, 255, 204, 0.5);
+}
+
+@media (max-width: 768px) {
+    .archives {
+        padding: 20px 15px;
+    }
+
+    .archives select {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}

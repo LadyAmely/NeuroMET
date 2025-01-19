@@ -1,0 +1,22 @@
+const myHeaders = new Headers();
+
+myHeaders.append("Content-Type", "application/json");
+
+    const raw = JSON.stringify
+    ({  "data":
+
+        {    "firstName": "Krzysztof",
+              "lastName": "Bzowski",
+              "academicDegree": "DrInz",
+              "email": "kbzowski@agh.edu.pl",
+              "affiliation": "AGH",
+              "presentation": "Jakis tytul"
+
+         }});
+
+
+         const requestOptions =
+         {  method: "POST",  headers: myHeaders,
+         body: raw,  redirect: "follow"};
+
+         fetch("https://neuromet.wimiip.eu/api/participants", requestOptions)

@@ -1,0 +1,69 @@
+
+
+.contact-section {
+    color: #333333;
+    padding: 50px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    color: #1f2937;
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.contact-info {
+    text-align: center;
+    line-height: 1.6;
+    padding: 15px;
+    border-bottom: rgba(126, 161, 243, 0.24) 2px solid;
+    display: inline-block;
+    width: 50%;
+    justify-content: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.contact-info a{
+    color: #11dfaf;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #11dfaf;
+    text-decoration: underline;
+    text-decoration-color: #11dfaf;
+    text-decoration-thickness: 2px;
+}
+
+
+
+.contact-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    margin-top: 30px;
+    background-image: url('images/agh.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
