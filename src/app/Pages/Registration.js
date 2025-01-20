@@ -1,7 +1,6 @@
 "use client";
 import Checkbox from "@/app/Components/protons/Checkbox";
 import { useState } from "react";
-import Captcha from "@/app/Components/atoms/Captcha";
 import Buttons from "@/app/Components/atoms/Buttons";
 import "../CSS/form.css";
 
@@ -46,7 +45,7 @@ function Registration() {
         };
 
         try {
-            const response = await fetch("https://neuromet.wimiip.eu/api/participants", requestOptions); // Podaj prawidłowy URL API
+            const response = await fetch("https://neuromet.wimiip.eu/api/participants", requestOptions);
             if (response.ok) {
                 const result = await response.json();
                 console.log("Sukces:", result);
@@ -60,14 +59,13 @@ function Registration() {
                     presentation: "",
                 });
 
-                alert("Formularz został pomyślnie wysłany!");
             } else {
                 console.error("Błąd:", response.statusText);
-                alert("Wystąpił błąd podczas wysyłania formularza.");
+
             }
         } catch (error) {
             console.error("Błąd:", error);
-            alert("Wystąpił błąd podczas wysyłania formularza.");
+
         }
     };
 
@@ -180,7 +178,6 @@ function Registration() {
                             }}
                         />
                     </div>
-                    <Captcha/>
                     <Buttons onReset={handleReset} />
                 </form>
             </div>
