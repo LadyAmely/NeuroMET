@@ -1,46 +1,95 @@
 .program-container {
     margin: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /*transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;*/
 }
 
 .program-title {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    line-height: 1.4;
 }
 
 .program-schedule {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    margin-top: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .program-item {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px 16px;
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.program-item:last-child {
+    border-bottom: none;
 }
 
 .program-time {
     font-weight: bold;
     font-size: 1rem;
-    color: #555;
-    flex: 0 0 120px;
-    text-align: right;
+    color: #1f2937;
+    flex: 0 0 80px;
+    padding-top: 4px;
+    margin-right: 16px;
 }
 
-.program-event {
-    font-weight: normal;
-    font-size: 1rem;
-    color: #777;
+.program-content {
     flex: 1;
-    margin-left: 20px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.program-presenter {
+    font-size: 0.95rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 4px;
+    padding-left: 10px;
+    border-left: 3px solid #e5e7eb;
+}
+
+.program-pdf-link {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 30px;
+}
+
+.program-pdf-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.program-pdf-button:hover {
+    background-color: #374151;
+}
+
+.program-pdf-button svg {
+    margin-right: 10px;
+}
+
+/* Special styling for breaks and special events */
+.program-item.special-event {
+    background-color: #f3f4f6;
+}
+
+.program-item.special-event .program-title {
+    font-weight: 700;
+    color: #1f2937;
 }
 
 h2 {
