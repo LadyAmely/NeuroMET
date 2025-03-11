@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 :root {
   --primary: #1f2937;
   --primary-light: #374151;
@@ -13,31 +18,56 @@
   --success: #10b981;
   --muted: #6b7280;
   --border: #e5e7eb;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --primary: #f9fafb;
-    --primary-light: #e5e7eb;
-    --secondary: #60a5fa;
-    --secondary-light: #93c5fd;
-    --border: #374151;
-    --muted: #9ca3af;
-  }
+  --navbar-bg: #222a3f;
+  --navbar-hover: #1e2736;
+  --navbar-accent: #00ffcc;
+  --navbar-accent-hover: #00cc99;
 }
 
 @layer base {
   body {
-    @apply text-foreground bg-background font-sans;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold;
+    font-weight: 700;
   }
 
   h2 {
-    @apply text-2xl md:text-3xl;
+    font-size: 26px;
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+/* Essential utility classes that match original styles */
+@layer components {
+  .navbar {
+    @apply sticky top-0 flex justify-between items-center py-[15px] px-[30px] bg-[var(--navbar-bg)] shadow-lg z-50 border-b-2 border-[var(--navbar-accent)] transition-colors;
+  }
+
+  .navbar:hover {
+    @apply bg-[var(--navbar-hover)];
+  }
+
+  .card {
+    @apply p-[30px] rounded-[16px] bg-[#f9fafb] shadow-card transition-all;
+  }
+
+  .button {
+    @apply py-[14px] px-[16px] rounded-[10px] font-semibold shadow-button transition-all;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-[14px] border border-[#d1d5db] rounded-[10px] outline-none text-[14px] bg-white transition-all shadow-input;
+  }
+
+  .form-input:focus {
+    @apply border-secondary shadow-focus;
   }
 }
