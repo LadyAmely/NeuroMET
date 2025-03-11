@@ -4,6 +4,7 @@ import { useState } from "react";
 import Buttons from "@/app/Components/atoms/Buttons";
 import "../CSS/form.css";
 import {Notification} from "@/app/Components/atoms/Notification";
+import config from "@/app/config";
 
 function Registration() {
     const [confirmation, setConfirmation] = useState(false);
@@ -86,6 +87,31 @@ function Registration() {
         setIsInputEnabled(false);
         setIsCheckboxChecked(false);
     };
+
+    if (!config.registrationOpen) {
+        return (
+            <div
+                style={{
+                    background: "radial-gradient(circle, #f7f7f7, #e2e6ea)",
+                    padding: "20px",
+                }}
+            >
+                <div className="registration-container">
+                    <h2>Rejestracja</h2>
+                    <div className="registration-closed">
+                        <div className="registration-closed-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                                <path d="M9.17 14.83l5.66-5.66M14.83 14.83L9.17 9.17"></path>
+                            </svg>
+                        </div>
+                        <p className="registration-closed-message">{config.registrationClosedMessage}</p>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div
             style={{
