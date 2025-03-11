@@ -1,7 +1,7 @@
 .program-container {
     margin: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /*transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;*/
 }
 
 .program-title {

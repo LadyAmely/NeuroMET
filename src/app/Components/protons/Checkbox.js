@@ -1,66 +1,61 @@
+import React from 'react';
+import {Check} from 'lucide-react';
 
+const Checkbox = ({
+                      isChecked,
+                      onChange,
+                      label = "Prezentacja (Opcjonalnie)",
+                      id = "presentation-checkbox"
+                  }) => {
+    const handleChange = (event) => {
+        // If triggered by keyboard or direct click on input
+        if (event.type === 'change') {
+            onChange(!isChecked);
+            return;
+        }
 
-export default function Checkbox({ isChecked, onChange }) {
-    const handleCheckboxClick = () => {
-        const newCheckedState = !isChecked;
-        onChange(newCheckedState);
+        // If triggered by click on wrapper div
+        if (event.type === 'click' && event.target !== event.currentTarget) {
+            return; // Ignore if click was on the input itself
+        }
+
+        onChange(!isChecked);
     };
 
     return (
-        <div
-            style={{
-                display: 'flex',
-                alignItems: 'center',
-                marginTop: '20px',
-                cursor: 'pointer'
-            }}
-            onClick={handleCheckboxClick}
-            onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                    e.preventDefault();
-                    handleCheckboxClick();
-                }
-            }}
-            role="checkbox"
-            aria-checked={isChecked}
-            tabIndex={0}
-        >
-            <div
-                style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "20px",
-                    height: "20px",
-                    border: `2px solid ${isChecked ? "#4a90e2" : "#ccc"}`,
-                    borderRadius: "4px",
-                    backgroundColor: isChecked ? "#4a90e2" : "transparent",
-                    transition: "background-color 0.3s, border-color 0.3s"
-                }}
-            >
-                {isChecked && (
-                    <span
-                        style={{
-                            color: "white",
-                            fontSize: "14px",
-                            fontWeight: "bold",
-                            lineHeight: "1"
-                        }}
-                    >
-                        ✓
-                    </span>
-                )}
-            </div>
+        <div className="mt-5">
+            <div className="relative flex items-start">
+                <div className="flex items-center h-5">
+                    <input
+                        type="checkbox"
+                        id={id}
+                        checked={isChecked}
+                        onChange={handleChange}
+                        className={`
+              h-5 w-5 rounded
+              mt-1.5
+              focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
+              cursor-pointer text-blue-500 
+              ${isChecked
+                            ? 'bg-blue-500'
+                            : 'bg-white'
+                        }
+            `}
+                    />
 
-            <label
-                style={{
-                    fontSize: '16px',
-                    color: '#555',
-                    marginLeft: '10px'
-                }}
-            >
-                Prezentacja (Opcjonalnie)
-            </label>
+                </div>
+                <label
+                    htmlFor={id}
+                    className={`
+            ml-3 text-base select-none
+            text-gray-600 cursor-pointer
+          `}
+                >
+                    {label}
+                </label>
+            </div>
         </div>
     );
-}
+};
+
+export default Checkbox;

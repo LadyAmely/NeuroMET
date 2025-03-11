@@ -1,4 +1,3 @@
-"use client";
 import "../CSS/contact.css";
 
 function Contact(){

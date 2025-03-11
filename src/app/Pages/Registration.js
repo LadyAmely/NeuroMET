@@ -3,8 +3,12 @@ import Checkbox from "@/app/Components/protons/Checkbox";
 import { useState } from "react";
 import Buttons from "@/app/Components/atoms/Buttons";
 import "../CSS/form.css";
+import {Notification} from "@/app/Components/atoms/Notification";
 
 function Registration() {
+    const [confirmation, setConfirmation] = useState(false);
+    const [isBusy, setIsBusy] = useState(false);
+
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -29,6 +33,7 @@ function Registration() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsBusy(true)
 
         const myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
@@ -58,14 +63,14 @@ function Registration() {
                     affiliation: "",
                     presentation: "",
                 });
-
+                setConfirmation(true);
             } else {
                 console.error("Błąd:", response.statusText);
-
             }
         } catch (error) {
             console.error("Błąd:", error);
-
+        } finally {
+            setIsBusy(false);
         }
     };
 
@@ -137,11 +142,13 @@ function Registration() {
                             className="styled-select"
                         >
                             <option value="" disabled>-- Wybierz stopień naukowy --</option>
-                            <option value="Inżynier">Inżynier</option>
-                            <option value="Magister">Magister</option>
-                            <option value="Doktor">Doktor</option>
-                            <option value="Doktor Habilitowany">Doktor habilitowany</option>
-                            <option value="Profesor">Profesor</option>
+                            <option value="Mgr">Magister</option>
+                            <option value="MgrInz">Magister Inżynier</option>
+                            <option value="Dr">Doktor</option>
+                            <option value="DrInz">Doktor Inżynier</option>
+                            <option value="DrHab">Doktor Habilitowany</option>
+                            <option value="DrHabInz">Doktor Habilitowany Inżynier</option>
+                            <option value="ProfDrHabInz">Profesor Doktor Habilitowany Inżynier</option>
                         </select>
                     </div>
                     <div style={{marginBottom: "20px", position: "relative"}}>
@@ -178,7 +185,9 @@ function Registration() {
                             }}
                         />
                     </div>
-                    <Buttons onReset={handleReset} />
+
+                    {confirmation && <Notification>Dziękujemy za rejestracje</Notification>}
+                    <Buttons onReset={handleReset} busy={isBusy}/>
                 </form>
             </div>
         </div>

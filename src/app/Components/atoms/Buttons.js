@@ -1,63 +1,45 @@
-"use client";
+"use client"
 
-function Buttons({ onReset }) {
+import React from 'react';
+function Buttons({ onReset, busy }) {
     return (
-        <div
-            style={{
-                display: "flex",
-                gap: "15px",
-                justifyContent: "center",
-                alignItems: "center",
-                padding: "20px",
-            }}
-        >
+        <div className="flex gap-4 justify-center items-center p-5">
             <button
                 type="submit"
-                style={{
-                    backgroundColor: "#1b2433",
-                    border: "1px solid #00bfa5",
-                    borderRadius: "5px",
-                    color: "#00ffcc",
-                    padding: "10px 20px",
-                    fontSize: "16px",
-                    fontWeight: "500",
-                    cursor: "pointer",
-                    transition: "background-color 0.2s ease, transform 0.2s ease",
-                }}
-                onMouseOver={(e) => {
-                    e.target.style.backgroundColor = "#00bfa5";
-                    e.target.style.color = "#1b2433";
-                }}
-                onMouseOut={(e) => {
-                    e.target.style.backgroundColor = "#1b2433";
-                    e.target.style.color = "#00ffcc";
-                }}
+                disabled={busy}
+                className={`
+          relative flex items-center justify-center
+          bg-gray-900 border border-teal-500 rounded
+          px-5 py-2.5 text-base font-medium
+          text-teal-300 transition-all duration-200
+          hover:bg-teal-500 hover:text-gray-900
+          disabled:opacity-50 disabled:cursor-not-allowed
+          disabled:hover:bg-gray-900 disabled:hover:text-teal-300
+          min-w-[120px]
+        `}
             >
-                Rejestruj
+                {busy ? (
+                    <>
+                        <span>Proszę czekać...</span>
+                    </>
+                ) : (
+                    'Rejestruj'
+                )}
             </button>
+
             <button
                 type="button"
-                style={{
-                    backgroundColor: "#1b2433",
-                    border: "1px solid #444c5c",
-                    borderRadius: "5px",
-                    color: "#888d98",
-                    padding: "10px 20px",
-                    fontSize: "16px",
-                    fontWeight: "500",
-                    cursor: "pointer",
-                    transition:
-                        "background-color 0.2s ease, transform 0.2s ease, color 0.2s ease",
-                }}
-                onMouseOver={(e) => {
-                    e.target.style.backgroundColor = "#444c5c";
-                    e.target.style.color = "#00ffcc";
-                }}
-                onMouseOut={(e) => {
-                    e.target.style.backgroundColor = "#1b2433";
-                    e.target.style.color = "#888d98";
-                }}
+                disabled={busy}
                 onClick={onReset}
+                className={`
+          bg-gray-900 border border-gray-600 rounded
+          px-5 py-2.5 text-base font-medium
+          text-gray-400 transition-all duration-200
+          hover:bg-gray-600 hover:text-teal-300
+          disabled:opacity-50 disabled:cursor-not-allowed
+          disabled:hover:bg-gray-900 disabled:hover:text-gray-400
+          min-w-[120px]
+        `}
             >
                 Anuluj
             </button>
