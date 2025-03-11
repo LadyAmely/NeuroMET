@@ -113,11 +113,11 @@ function Program() {
                                 isSpecialEvent ? 'bg-[#f3f4f6]' : 'bg-white'
                             }`}
                         >
-                            <span className="font-bold text-base text-[var(--primary)] flex-none w-[80px] pt-1 mr-4">
+                            <span className={`font-bold text-base text-[var(--primary)] flex-none w-[80px] mr-4 ${isSpecialEvent ? 'self-center' : 'pt-1'}`}>
                                 {item.time}
                             </span>
-                            <div className="flex-1 flex flex-col">
-                                <div className={`text-[1.05rem] leading-[1.4] mb-[5px] ${
+                            <div className={`flex-1 flex flex-col ${isSpecialEvent ? 'justify-center' : ''}`}>
+                                <div className={`text-[1.05rem] leading-[1.4] ${isSpecialEvent ? 'mb-0' : 'mb-[5px]'} ${
                                     isSpecialEvent 
                                         ? 'font-bold text-[var(--primary)]' 
                                         : 'font-semibold text-[#333]'

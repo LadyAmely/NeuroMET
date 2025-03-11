@@ -1,5 +1,31 @@
 export const conferenceData = [
-    { id: 1, year: 2023, title: "25. Seminarium NeuroMet2023", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 122", data: "Data: 18 kwietnia 2023",
+    { id: 1, year: 2024, title: "26. Seminarium NeuroMet2024", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 122", data: "Data: 18 kwietnia 2024",
+        presentations: [
+            { title: "Wykorzystanie metod uczenia maszynowego w analizie obrazów zmian nowotworowych jelita grubego\n" +
+                    "Łukasz Marcjan\n (Akademia Górniczo-Hutnicza)" },
+            { title: "Explainable Artificial Intelligence - analiza metod, narzędzi i możliwości aplikacji przemysłowych\n" +
+                    "Wojciech Jędrysik, Piotr Hajder, Łukasz Rauch\n (Akademia Górniczo-Hutnicza)"},
+            { title: "Ekstrakcja cech mikrostruktury na bazie zdjęć z wykorzystaniem algorytmów analizy obrazu\n" +
+                    "Tomasz Jażdżewski\n (Akademia Górniczo-Hutnicza)"},
+            { title: "Przewidywanie kategorii z impedancyjnych profili magnetycznych pojazdów\n" +
+                    "Filip Hallo \n(Akademia Górniczo-Hutnicza)"},
+            { title: "Opracowanie innowacyjnych rozwiązań w zakresie automatyzacji załadunku wagonów i badań koksu z wykorzystaniem zaawansowanych baz danych i systemów informatycznych\n" +
+                    "Marek Lepich\n (ArcelorMittal Poland S.A. Oddział w Zdzieszowicach)",
+                },
+            { title: "Domain-expert Application Handling Lack of data with Imputation Algorithms (DAHLIA)\n" +
+                    "Andrzej Kochański, Anna Kozak, Hanna Sadłowska, Przemysław Grzegorzewski\n(Politechnika Warszawska)",
+               },
+            { title: "Szczególne warunki imputacji danych - analiza przypadku\n" +
+                    "Szymon Pluta, Hanna Sadłowska, Andrzej Kochański\n (Politechnika Warszawska)" },
+            { title: "Wykorzystanie wzorców behawioralnych jako danych do modelowania w prewencyjnej kontroli procesu\n" +
+                "Jacek Kozłowski\n (Politechnika Warszawska)"},
+            { title: "Zastosowanie sieci neuronowych do modelu adaptacyjnego sterującego odsiarczaniem surówki żelaza\n" +
+            "Angelika Podolska-Loska\n (AGH Akademia Górniczo-Hutnicza)"},
+            { title: "Inteligentny, adaptacyjny system kontroli jakości i wspomagania optymalizacji produkcji systemów montażu precyzyjnego oparty o sztuczną inteligencję\n" +
+            "Tomasz Dębiński, Marcin Hojny, Danuta Szeliga\n(Akademia Górniczo-Hutnicza)"}
+        ],
+    },
+    { id: 2, year: 2023, title: "25. Seminarium NeuroMet2023", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 122", data: "Data: 18 kwietnia 2023",
         presentations: [
             { title: "Zastosowanie sztucznej inteligencji i uczenia maszynowego w pomiarach powierzchni\n" +
                     "Dawid Kucharski, Adam Gąska, Tomasz Kowaluk, Krzysztof Stępień, Bartosz Gapiński, Piotr Książek, Małgorzata Kujawińska, Włodzimierz Makieła, Michał Nawotka, Jerzy Sładek, Łukasz Ślusarski, Michał Wieczorowski\n" +
@@ -10,7 +36,7 @@ export const conferenceData = [
             { title: "Czy wrony pomogą uczyć sieci neuronowe?\n" +
                     "Marcin Perzyk\n" +
                     "(Politechnika Warszawska)" },
-            {title: "Rola wirtualnych ekspertów w procesach wyciskania aluminium\n"+"Jacek Kozłowski (Politechnika Warszawska)"},
+            {title: "Rola wirtualnych ekspertów w procesach wyciskania aluminium\n"+"Jacek Kozłowski\n(Politechnika Warszawska)"},
             {title: "Wykorzystanie sztucznych sieci neuronowych do projektowania procesu RTH\n" + "Hanna Sadłowska, Andrzej Kochański, Barbara Mrzygłód, Izabela Olejarczyk-Wożeńska, Dorota Byrska-Wójcik\n" +
                     "(Politechnika Warszawska, Akademia Górniczo-Hutnicza)"},
             {title: "Przewidywanie parametrów walcowania na podstawie obrazów EBSD\n"+"Maciej Tomczak\n" +
@@ -25,7 +51,7 @@ export const conferenceData = [
                     "(Inżynierii Produkcji, Szkoła Główna Gospodarstwa Wiejskiego)"}
         ],
     },
-    { id: 2, year: 2022, title: "24. Seminarium NeuroMet2022", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 122", data: "Data: 21 kwietnia 2022",
+    { id: 3, year: 2022, title: "24. Seminarium NeuroMet2022", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 122", data: "Data: 21 kwietnia 2022",
         presentations: [
             {title:"SUSTAIN 4.0 – inicjatywa zrównoważonego przemysłu 4.0. Analiza branży poligraficznej i opakowaniowej\n" +
                     "K. Krystosiak\n" +
@@ -71,7 +97,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)\n"}
         ]
     },
-    { id: 3, year: 2021, title: "23. Seminarium NeuroMet2021", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie",
+    { id: 4, year: 2021, title: "23. Seminarium NeuroMet2021", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie",
         presentations: [
             {title: "Zastosowanie koncepcji Big Data w procesie kontroli jakości profili giętych\n" +
                     "K. Bzowski, Ł. Rauch, K. Regulski\n" +
@@ -100,7 +126,7 @@ export const conferenceData = [
                     "(Politechnika Śląska)"}
         ]
     },
-    { id: 4, year: 2018, title: "22. Seminarium NeuroMet2018", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 22 kwietnia 2021",
+    { id: 5, year: 2018, title: "22. Seminarium NeuroMet2018", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 22 kwietnia 2021",
         presentations: [
             {title: "Generowanie reprezentatywnych elementów objętościowych reprezentujących materiały kompozytowe o dowolnym rozkładzie orientacji fazy wzmacniającej\n" +
                     "W. Ogierman\n" +
@@ -135,7 +161,7 @@ export const conferenceData = [
 
         ]
     },
-    { id: 5, year: 2017, title: "21. Seminarium NeuroMet2017", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 122", data: "Data: 12 kwietnia 2018",
+    { id: 6, year: 2017, title: "21. Seminarium NeuroMet2017", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 122", data: "Data: 12 kwietnia 2018",
         presentations: [
             {title: "Wpływ dyskretyzacji danych na jakość generowanych reguł\n" +
                     "A. Soroczyński\n" +
@@ -196,7 +222,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)"}
         ]
     },
-    { id: 6, year: 2016, title: "20. Seminarium NeuroMet2016", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 20 kwietnia 2017",
+    { id: 7, year: 2016, title: "20. Seminarium NeuroMet2016", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 20 kwietnia 2017",
         presentations: [
             {title: "Eksploracja danych produkcyjnych w hucie stali dla identyfikacji przyczyn powstawania wad w wyrobach\n" +
                     "Agnieszka Rodziewicz\n" +
@@ -221,7 +247,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza, Politechnika Śląska)\n"}
         ]
     },
-    { id: 7, year: 2015, title: "19. Seminarium NeuroMet2015", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 12 maja 2016",
+    { id: 8, year: 2015, title: "19. Seminarium NeuroMet2015", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 12 maja 2016",
         presentations: [
             {title: "Wieloskalowe modelowanie tkanki kostnej\n" +
                     "Przemysław Makowski\n" +
@@ -246,7 +272,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)\n"}
         ]
     },
-    { id: 8, year: 2014, title: "18. Seminarium NeuroMet2014", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 23 kwietnia 2015",
+    { id: 9, year: 2014, title: "18. Seminarium NeuroMet2014", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 23 kwietnia 2015",
         presentations: [
             {title:"Projekt systemu ekspertowego do oceny efektywności kopalń węgla\n" +
                     "Tadeusz Wieczorek, Sławomir Golak\n" +
@@ -271,7 +297,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)\n"}
         ]
     },
-    { id: 9, year: 2013, title: "17. Seminarium NeuroMet2013", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 24 kwietnia 2014",
+    { id: 10, year: 2013, title: "17. Seminarium NeuroMet2013", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 24 kwietnia 2014",
         presentations: [
             {title: "Archipelag sztucznej inteligencji\n" +
                     "Ryszard Tadeusiewicz\n" +
@@ -309,7 +335,7 @@ export const conferenceData = [
                     "(ArcelorMittal)\n"}
         ]
     },
-    { id: 10, year: 2012, title: "16. Seminarium NeuroMet2012", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 18 kwietnia 2013",
+    { id: 11, year: 2012, title: "16. Seminarium NeuroMet2012", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 18 kwietnia 2013",
         presentations: [
             {title: "Modelowanie przemian fazowych w stalach za pomocą sztucznych sieci neuronowych\n" +
                     "Łukasz Sztangret\n" +
@@ -340,7 +366,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)\n"}
         ]
     },
-    { id: 11, year: 2011, title: "15. Seminarium NeuroMet2011", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 26 kwietnia 2012",
+    { id:12, year: 2011, title: "15. Seminarium NeuroMet2011", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 26 kwietnia 2012",
         presentations: [
             {title: "Fenomen odporności na uszkodzenia obserwowany w sztucznych sieciach neuronowych\n" +
                     "Ryszard Tadeusiewicz\n" +
@@ -364,7 +390,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)\n"}
         ]
     },
-    { id: 12, year: 2010, title: "14. Seminarium NeuroMet2010", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 28 kwietnia 2011",
+    { id: 13, year: 2010, title: "14. Seminarium NeuroMet2010", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 28 kwietnia 2011",
         presentations: [
             {title: "Nowe podejście do stosowania logiki rozmytej\n" +
                     "Jacek Pietraszek\n" +
@@ -395,7 +421,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)"}
         ]
     },
-    { id: 13, year: 2009, title: "13. Seminarium NeuroMet2009", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 22 kwietnia 2010",
+    { id: 14, year: 2009, title: "13. Seminarium NeuroMet2009", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 22 kwietnia 2010",
         presentations: [
             {title: "Segmentacja obrazów mikrostruktur materiałowych za pomocą sieci PCNN\n" +
                     "Ł. Łukasik, Ł. Rauch\n" +
@@ -433,7 +459,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)\n"}
         ]
     },
-    { id: 14, year: 2008, title: "12. Seminarium NeuroMet2008", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 23 kwietnia 2009",
+    { id: 15, year: 2008, title: "12. Seminarium NeuroMet2008", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 23 kwietnia 2009",
         presentations: [
             {title: "Kolejna metoda informatyczna inspirowana przez Naturę - algorytmy genetyczne\n" +
                     "R. Tadeusiewicz\n" +
@@ -472,7 +498,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)\n"}
         ]
     },
-    { id: 15, year: 2007, title: "11. Seminarium NeuroMet2007", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 24 kwietnia 2008",
+    { id: 16, year: 2007, title: "11. Seminarium NeuroMet2007", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 24 kwietnia 2008",
         presentations: [
             {title: "Co nowego wiemy o naturze ludzkiego intelektu?\n" +
                     "R. Tadeusiewicz\n" +
@@ -508,7 +534,7 @@ export const conferenceData = [
                     "(Politechnika Śląska)"}
         ]
     },
-    { id: 16, year: 2006, title: "10. Seminarium NeuroMet2006", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 26 kwietnia 2007",
+    { id: 17, year: 2006, title: "10. Seminarium NeuroMet2006", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 26 kwietnia 2007",
 
         presentations: [
             {title: "Sieci Hopfield'a - niesłusznie zapomniane narzędzie neuroinformatyki\n" +
@@ -536,7 +562,7 @@ export const conferenceData = [
         ]
 
     },
-    { id: 17, year: 2005, title: "9. Seminarium NeuroMet2005", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 20 kwietnia 2006",
+    { id: 18, year: 2005, title: "9. Seminarium NeuroMet2005", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 20 kwietnia 2006",
         presentations: [
             {title: "Powrót do korzeni. Sieci neuronowe jako narzędzie rozumienia i poznania ludzkiego umysłu\n" +
                     "R. Tadeusiewicz\n" +
@@ -572,7 +598,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)"}
         ]
     },
-    { id: 18, year: 2004, title: "8. Seminarium NeuroMet2004", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 14 kwietnia 2005",
+    { id: 19, year: 2004, title: "8. Seminarium NeuroMet2004", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 14 kwietnia 2005",
         presentations: [
             {title: "Czy po erze przetwarzania i rozpoznawania sygnałów nadejdzie epoka ich automatycznego rozumienia\n" +
                     "R. Tadeusiewicz\n" +
@@ -605,7 +631,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)\n"}
         ]
     },
-    { id: 19, year: 2003, title: "7. Seminarium NeuroMet2003", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 15 kwietnia 2004",
+    { id: 20, year: 2003, title: "7. Seminarium NeuroMet2003", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie, al. Mickiewicza 30, pawilon B-4, sala 209", data: "Data: 15 kwietnia 2004",
         presentations: [
             {title: "Modelowanie pieca konwertorowego za pomocą sieci neuronowych - porównanie dwóch modeli\n" +
                     "W. Mitkowski, M. Długosz\n" +
@@ -633,7 +659,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)"}
         ]
     },
-    { id: 20, year: 2002, title: "6. Seminarium NeuroMet2002", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie", data: "Data: 24 kwietnia 2003",
+    { id: 21, year: 2002, title: "6. Seminarium NeuroMet2002", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie", data: "Data: 24 kwietnia 2003",
         presentations:[
             {title: "Sztuczna inteligencja jako narzędzie do odkrywania nowych faktów w pozornie wyeksploatowanych danych badawczych\n" +
                     "R. Tadeusiewicz\n" +
@@ -656,7 +682,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)"}
         ]
     },
-    { id: 21, year: 2001, title: "5. Seminarium NeuroMet2001", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie", data: "",
+    { id: 22, year: 2001, title: "5. Seminarium NeuroMet2001", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie", data: "",
         presentations: [
             {title: "Sztuczna inteligencja to nie tylko sieci neuronowe\n" +
                     "R. Tadeusiewicz\n" +
@@ -684,7 +710,7 @@ export const conferenceData = [
                     "(Akademia Górniczo-Hutnicza)"}
         ]
     },
-    { id: 22, year: 2000, title: "4. Seminarium NeuroMet2000", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie", data: "",
+    { id: 23, year: 2000, title: "4. Seminarium NeuroMet2000", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie", data: "",
         presentations: [
             {title: "Problemy optymalizacji struktury modelu neuronowego\n" +
                     "R. Tadeusiewicz\n" +
@@ -709,7 +735,7 @@ export const conferenceData = [
                     "(Politechnika Krakowska)\n"}
         ]
     },
-    { id: 23, year: 1999, title: "3. Seminarium NeuroMet1999", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie", data: "",
+    { id: 24, year: 1999, title: "3. Seminarium NeuroMet1999", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie", data: "",
         presentations: [
             {title: "Samoorganizujące się sieci neuronowe jako nowa metoda wizualizacji złożonych zbiorów danych\n" +
                     "R. Tadeusiewicz\n" +
@@ -736,7 +762,7 @@ export const conferenceData = [
 
         ]
     },
-    { id: 24, year: 1998, title: "2. Seminarium NeuroMet1998", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie", data: "",
+    { id: 25, year: 1998, title: "2. Seminarium NeuroMet1998", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie", data: "",
         presentations: [
 
             {title: "Nowe metody uczenia w sztucznych sieciach neuronowych\n" +
@@ -758,7 +784,7 @@ export const conferenceData = [
                     "J. Kusiak\n" +
                     "(Akademia Górniczo-Hutnicza)"}
         ] },
-    { id: 25, year: 1997, title: "1. Seminarium NeuroMet1997", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie", data: "",
+    { id: 26, year: 1997, title: "1. Seminarium NeuroMet1997", description: "Lokalizacja: Akademia Górniczo-Hutnicza w Krakowie", data: "",
         presentations: [
 
             {title: "Wprowadzenie do sieci neuronowych\n" +
