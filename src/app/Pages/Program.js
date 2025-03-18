@@ -2,83 +2,86 @@ import { FileText } from 'lucide-react';
 
 const schedule = [
     {
-        time: "10:00", 
-        title: "ROZPOCZĘCIE", 
+        time: "9:50",
+        title: "ROZPOCZĘCIE",
         presenter: ""
     },
     {
-        time: "10:10", 
-        title: "Pretrenowane sieci neuronowe do prognozowania szeregów czasowych i ich zastosowania przemysłowe", 
+        time: "10:00",
+        title: "Pretrenowane sieci neuronowe do prognozowania szeregów czasowych i ich zastosowania przemysłowe",
         presenter: "Jakub Adamczyk (AGH WI)"
     },
     {
-        time: "10:30", 
-        title: "Integracja wiedzy w procesie analizie mikrostruktury stali z wykorzystaniem uczenia maszynowego", 
-        presenter: "Filip Hallo (AGH WIMiIP)"
+        time: "10:20",
+        title: "Integracja wiedzy w procesie analizy mikrostruktury stali z wykorzystaniem uczenia maszynowego",
+        presenter: "Filip Hallo, Tomasz Jażdżewski (AGH WIMiIP)"
     },
     {
-        time: "10:50", 
-        title: "Algorytmika i analiza konstrukcji urządzenia do śledzenia ruchu gałki ocznej pozwalająca na wdrażanie sterowania aplikacjami", 
+        time: "10:40",
+        title: "Algorytmika i analiza konstrukcji urządzenia do śledzenia ruchu gałki ocznej pozwalająca na wdrażanie sterowania aplikacjami",
         presenter: "Szymon Zych (AGH WIMiIP)"
     },
     {
-        time: "11:10", 
-        title: "Integracja funkcjonalności dużych modeli językowych z metodami Explainable Artificial Intelligence (XAI) w obszarze analizy obrazów", 
+        time: "11:00",
+        title: "Integracja funkcjonalności dużych modeli językowych z metodami Explainable Artificial Intelligence (XAI) w obszarze analizy obrazów",
         presenter: "Wojciech Jędrysik, Łukasz Rauch (AGH WIMiIP)"
     },
     {
-        time: "11:30",
+        time: "11:20",
         title: "Wykorzystanie sztucznych sieci neuronowych do modelowania procesów dynamicznych",
         presenter: "Łukasz Sztangret (AGH WIMiIP), Paweł Maczuga (AGH WI), Danuta Szeliga (AGH WIMiIP), Maciej Paszyński (AGH WI)"
     },
-
     {
-        time: "11:50",
-        title: "Projektowanie Grafowych Sieci Neuronowych z wykorzystaniem Kartezjańskiego Programowania Genetycznego: analiza tlenków mono-metalicznych na zbiorze CHILI-3K", 
+        time: "11:40",
+        title: "Wykorzystanie metod bazujących na parach prototypów do poprawy skalowalności systemów uczących się",
+        presenter: "Daniel Dąbrowski, Marcin Blachnik (Politechnika Śląska WIM)"
+    },
+    {
+        time: "12:00",
+        title: "Projektowanie Grafowych Sieci Neuronowych z wykorzystaniem Kartezjańskiego Programowania Genetycznego: analiza tlenków mono-metalicznych na zbiorze CHILI-3K",
         presenter: "Maciej Krzywda (AGH WFiIS)"
     },
     {
-        time: "12:10",
-        title: "PRZERWA", 
+        time: "12:20",
+        title: "PRZERWA",
         presenter: ""
     },
     {
         time: "12:40",
-        title: "Interface-Engineeering of Layered transition metal chalcogenides nanostructures for thermoelectric applications", 
+        title: "Interface-Engineeering of Layered transition metal chalcogenides nanostructures for thermoelectric applications",
         presenter: "Abinaya Rengarajan (AGH WIMiC)"
     },
     {
         time: "13:00",
-        title: "How Reliable Are Optimal Solutions? Post-optimal Analysis of Multi-modal Real-world Problems", 
+        title: "How Reliable Are Optimal Solutions? Post-optimal Analysis of Multi-modal Real-world Problems",
         presenter: "Hubert Guzowski (AGH WI)"
     },
     {
         time: "13:20",
-        title: "Kwantowo-ewolucyjna optymalizacja własności mechanicznych dwufazowych płaskich materiałów opartych na silicenie", 
-        presenter: "Adam Mrozek (AGH WIMiIP), Wacław Kuś (Politechnika Śląska)"
+        title: "Kwantowo-ewolucyjna optymalizacja własności mechanicznych dwufazowych płaskich materiałów opartych na silicenie",
+        presenter: "Adam Mrozek (AGH WIMiIP), Wacław Kuś (Politechnika Śląska MT)"
     },
     {
         time: "13:40",
-        title: "Zastosowanie modeli zastępczych w optymalizacji numerycznej przemysłowych urządzeń elektrotermicznych", 
-        presenter: "Jakub Wyciślik, Sławomir Golak (Politechnika Śląska)"
+        title: "Zastosowanie modeli zastępczych w optymalizacji numerycznej przemysłowych urządzeń elektrotermicznych",
+        presenter: "Jakub Wyciślik, Sławomir Golak (Politechnika Śląska WIM)"
     },
     {
         time: "14:00",
-        title: "Modelowanie wytopu wlewków aluminiowych o różnej zawartości złomu", 
+        title: "Modelowanie wytopu wlewków aluminiowych o różnej zawartości złomu",
         presenter: "Andrzej Kochański, Hanna Sadłowska (Politechnika Warszawska), Magdalena Kawalec (AGH WO)"
     },
     {
         time: "14:20",
-        title: "Nowa generacja modeli dla procesów wytwarzania", 
-        presenter: "Andrzej Kochański (Politechnika Warszawska)"
+        title: "Nowa generacja modeli dla procesów wytwarzania",
+        presenter: "Andrzej Kochański, Hanna Sadłowska (Politechnika Warszawska)"
     },
     {
         time: "14:40",
-        title: "ZAKOŃCZENIE", 
+        title: "ZAKOŃCZENIE",
         presenter: ""
     },
 ];
-
 
 function Program() {
     return (
